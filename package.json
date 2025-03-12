@@ -25,5 +25,9 @@
   "devDependencies": {
     "tailwindcss": "^3",
     "typescript": "^5.8.2"
-  }
+  },
+  "files": [
+    "dist",
+    "mai-colors.css"
+  ]
 }

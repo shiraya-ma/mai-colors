@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shiraya-ma/mai-colors/issues"
   },
-  "homepage": "https://github.com/shiraya-ma/mai-colors#readme"
+  "homepage": "https://github.com/shiraya-ma/mai-colors#readme",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
 }

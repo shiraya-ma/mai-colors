@@ -6,7 +6,7 @@
   "module": "dist/es/index.js",
   "types": "dist/es/index.d.ts",
   "scripts": {
-    "build": "bun run clean && bun run build:cj && bun run build:es",
+    "build": "npm run clean && npm run build:cj && npm run build:es",
     "build:cj": "tsc -p tsconfig.cj.json",
     "build:es": "tsc -p tsconfig.es.json",
     "clean": "rm -rf ./dist"

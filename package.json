@@ -2,9 +2,14 @@
   "name": "@shiraya-ma/mai-colors",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/cj/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/es/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bun run clean && bun run build:cj && bun run build:es",
+    "build:cj": "tsc -p tsconfig.cj.json",
+    "build:es": "tsc -p tsconfig.es.json",
+    "clean": "rm -rf ./dist"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 'use strict';
-import type { RecursiveKeyValuePair } from 'tailwindcss/types/config';
+import type MaiColors from './index';
 
-export const chocolate: Color = {
+const chocolate: MaiColors.Color = {
   50:  "#fce6e4",
   100: "#e1c4c5",
   200: "#c3a0a2",
@@ -14,7 +14,7 @@ export const chocolate: Color = {
   900: "#3e1a23",
 };
 
-export const cider: Color = {
+const cider: MaiColors.Color = {
   50:  '#e2f1f5',
   100: '#b8dbe5',
   200: '#90c3d4',
@@ -27,7 +27,7 @@ export const cider: Color = {
   900: '#00446c',
 };
 
-export const citrus: Color = {
+const citrus: MaiColors.Color = {
   50:  '#fdf2e4',
   100: '#fbdebc',
   200: '#f9c892',
@@ -40,7 +40,7 @@ export const citrus: Color = {
   900: '#d3562f',
 };
 
-export const mint: Color = {
+const mint: MaiColors.Color = {
   50:  "#ddefed",
   100: "#aad8d2",
   200: "#73bfb5",
@@ -53,7 +53,7 @@ export const mint: Color = {
   900: "#003b2c",
 };
 
-export const strawberry: Color = {
+const strawberry: MaiColors.Color = {
   50:  '#fbeaee',
   100: '#f7cad3',
   200: '#e3949d',
@@ -66,15 +66,10 @@ export const strawberry: Color = {
   900: '#a90026',
 };
 
-export interface Color extends RecursiveKeyValuePair {
-  50:  string,
-  100: string,
-  200: string,
-  300: string,
-  400: string,
-  500: string,
-  600: string,
-  700: string,
-  800: string,
-  900: string,
+export const colors: MaiColors.Colors = {
+  chocolate,
+  cider,
+  citrus,
+  mint,
+  strawberry
 };

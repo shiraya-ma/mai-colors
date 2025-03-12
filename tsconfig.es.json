@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "exclude": [
+        "src/dev"
+    ],
+    "compilerOptions": {
+        "module": "ESNext",
+        "outDir": "dist/es"
+    }
+}
